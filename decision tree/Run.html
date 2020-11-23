@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Run</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>DecisionTreeTitanic</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14259,7 +14259,7 @@ a.anchor-link {
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[260]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python2"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="s2">&quot;s3://decisiontree-bigdata/Titanic_train.csv&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">inferSchema</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -14286,13 +14286,39 @@ a.anchor-link {
 
 
 
-<div id="d4006463-47e1-4ac7-99e7-2d30c5e9bd99" class="jupyter-widgets jp-OutputArea-output ">
+<div id="2c501bbe-3c13-427e-a7a8-894871c1f116" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('d4006463-47e1-4ac7-99e7-2d30c5e9bd99');
+var element = document.getElementById('2c501bbe-3c13-427e-a7a8-894871c1f116');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "2f9a243229e243b7ba08d9da3f6d2cae", "version_major": 2, "version_minor": 0}
+{"model_id": "0a2354a1d3a34ac6893ec5b3c73a8c83", "version_major": 2, "version_minor": 0}
 </script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Starting Spark application
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<table>
+<tr><th>ID</th><th>YARN Application ID</th><th>Kind</th><th>State</th><th>Spark UI</th><th>Driver log</th><th>Current session?</th></tr><tr><td>0</td><td>application_1606171789472_0001</td><td>pyspark</td><td>idle</td><td><a target="_blank" href="http://ip-172-31-15-80.ec2.internal:20888/proxy/application_1606171789472_0001/">Link</a></td><td><a target="_blank" href="http://ip-172-31-2-77.ec2.internal:8042/node/containerlogs/container_1606171789472_0001_01_000001/livy">Link</a></td><td>✔</td></tr></table>
 </div>
 
 </div>
@@ -14308,76 +14334,9 @@ var element = document.getElementById('d4006463-47e1-4ac7-99e7-2d30c5e9bd99');
 
 
 
-<div id="ba6d5a21-5c9b-45ef-9ced-d9a53d7a9ff8" class="jupyter-widgets jp-OutputArea-output ">
+<div id="b836ec14-dfd8-474b-b8cf-012241b4b173" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('ba6d5a21-5c9b-45ef-9ced-d9a53d7a9ff8');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[261]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="f114370b-ef89-44d9-886a-2aaebbfffb9e" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('f114370b-ef89-44d9-886a-2aaebbfffb9e');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "1fdb00d4f9bc414cbd738aaa34b35834", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="a34c0d09-2487-45d6-b577-cf05f7ed25f9" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('a34c0d09-2487-45d6-b577-cf05f7ed25f9');
+var element = document.getElementById('b836ec14-dfd8-474b-b8cf-012241b4b173');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14393,32 +14352,31 @@ var element = document.getElementById('a34c0d09-2487-45d6-b577-cf05f7ed25f9');
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>+-----------+--------+------+--------------------+------+----+-----+-----+----------------+-------+-----+--------+
-|PassengerId|Survived|Pclass|                Name|   Sex| Age|SibSp|Parch|          Ticket|   Fare|Cabin|Embarked|
-+-----------+--------+------+--------------------+------+----+-----+-----+----------------+-------+-----+--------+
-|          1|       0|     3|Braund, Mr. Owen ...|  male|22.0|    1|    0|       A/5 21171|   7.25| null|       S|
-|          2|       1|     1|Cumings, Mrs. Joh...|female|38.0|    1|    0|        PC 17599|71.2833|  C85|       C|
-|          3|       1|     3|Heikkinen, Miss. ...|female|26.0|    0|    0|STON/O2. 3101282|  7.925| null|       S|
-|          4|       1|     1|Futrelle, Mrs. Ja...|female|35.0|    1|    0|          113803|   53.1| C123|       S|
-|          5|       0|     3|Allen, Mr. Willia...|  male|35.0|    0|    0|          373450|   8.05| null|       S|
-|          6|       0|     3|    Moran, Mr. James|  male|null|    0|    0|          330877| 8.4583| null|       Q|
-|          7|       0|     1|McCarthy, Mr. Tim...|  male|54.0|    0|    0|           17463|51.8625|  E46|       S|
-|          8|       0|     3|Palsson, Master. ...|  male| 2.0|    3|    1|          349909| 21.075| null|       S|
-|          9|       1|     3|Johnson, Mrs. Osc...|female|27.0|    0|    2|          347742|11.1333| null|       S|
-|         10|       1|     2|Nasser, Mrs. Nich...|female|14.0|    1|    0|          237736|30.0708| null|       C|
-|         11|       1|     3|Sandstrom, Miss. ...|female| 4.0|    1|    1|         PP 9549|   16.7|   G6|       S|
-|         12|       1|     1|Bonnell, Miss. El...|female|58.0|    0|    0|          113783|  26.55| C103|       S|
-|         13|       0|     3|Saundercock, Mr. ...|  male|20.0|    0|    0|       A/5. 2151|   8.05| null|       S|
-|         14|       0|     3|Andersson, Mr. An...|  male|39.0|    1|    5|          347082| 31.275| null|       S|
-|         15|       0|     3|Vestrom, Miss. Hu...|female|14.0|    0|    0|          350406| 7.8542| null|       S|
-|         16|       1|     2|Hewlett, Mrs. (Ma...|female|55.0|    0|    0|          248706|   16.0| null|       S|
-|         17|       0|     3|Rice, Master. Eugene|  male| 2.0|    4|    1|          382652| 29.125| null|       Q|
-|         18|       1|     2|Williams, Mr. Cha...|  male|null|    0|    0|          244373|   13.0| null|       S|
-|         19|       0|     3|Vander Planke, Mr...|female|31.0|    1|    0|          345763|   18.0| null|       S|
-|         20|       1|     3|Masselmani, Mrs. ...|female|null|    0|    0|            2649|  7.225| null|       C|
-+-----------+--------+------+--------------------+------+----+-----+-----+----------------+-------+-----+--------+
-only showing top 20 rows</pre>
+<pre>SparkSession available as &#39;spark&#39;.
+</pre>
 </div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="fa4aeb86-bf64-4a20-87bb-c6ce77becbe9" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('fa4aeb86-bf64-4a20-87bb-c6ce77becbe9');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
 </div>
 
 </div>
@@ -14428,10 +14386,10 @@ only showing top 20 rows</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[262]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">printSchema</span>
+<div class=" highlight hl-python2"><pre><span></span><span class="n">clearData</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">na</span><span class="o">.</span><span class="n">drop</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14455,12 +14413,12 @@ only showing top 20 rows</pre>
 
 
 
-<div id="1b1d59ba-9ea4-4d7e-a65a-3563ada15a3b" class="jupyter-widgets jp-OutputArea-output ">
+<div id="6062866b-6920-4e64-bc39-730a1e0add0a" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('1b1d59ba-9ea4-4d7e-a65a-3563ada15a3b');
+var element = document.getElementById('6062866b-6920-4e64-bc39-730a1e0add0a');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "9938aaa21e1a4e478dc9c17a20c3a2e7", "version_major": 2, "version_minor": 0}
+{"model_id": "85b6781f543b4243a3e0cc1f812c80fe", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14477,26 +14435,15 @@ var element = document.getElementById('1b1d59ba-9ea4-4d7e-a65a-3563ada15a3b');
 
 
 
-<div id="01bd291e-a713-4159-81b4-947b7657d0bb" class="jupyter-widgets jp-OutputArea-output ">
+<div id="28340f4e-d4bb-40ca-bb02-c982b58c549c" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('01bd291e-a713-4159-81b4-947b7657d0bb');
+var element = document.getElementById('28340f4e-d4bb-40ca-bb02-c982b58c549c');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;bound method DataFrame.printSchema of DataFrame[PassengerId: int, Survived: int, Pclass: int, Name: string, Sex: string, Age: double, SibSp: int, Parch: int, Ticket: string, Fare: double, Cabin: string, Embarked: string]&gt;</pre>
-</div>
 </div>
 
 </div>
@@ -14506,10 +14453,10 @@ var element = document.getElementById('01bd291e-a713-4159-81b4-947b7657d0bb');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[263]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="n">filtered</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;Survived&quot;</span><span class="p">,</span> <span class="s2">&quot;Sex&quot;</span><span class="p">,</span> <span class="s2">&quot;SibSp&quot;</span><span class="p">,</span> <span class="s2">&quot;Parch&quot;</span><span class="p">,</span> <span class="s2">&quot;Embarked&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">na</span><span class="o">.</span><span class="n">drop</span><span class="p">()</span>
+<div class=" highlight hl-python2"><pre><span></span><span class="n">filtered</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;PassengerId&quot;</span><span class="p">,</span> <span class="s2">&quot;Survived&quot;</span><span class="p">,</span> <span class="s2">&quot;Sex&quot;</span><span class="p">,</span> <span class="s2">&quot;SibSp&quot;</span><span class="p">,</span> <span class="s2">&quot;Parch&quot;</span><span class="p">,</span> <span class="s2">&quot;Embarked&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">na</span><span class="o">.</span><span class="n">drop</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14533,12 +14480,12 @@ var element = document.getElementById('01bd291e-a713-4159-81b4-947b7657d0bb');
 
 
 
-<div id="baf6e618-0d6e-4e90-bf69-8f3d0f52a0c2" class="jupyter-widgets jp-OutputArea-output ">
+<div id="27548f58-86b6-45ec-ad6e-27e65027887b" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('baf6e618-0d6e-4e90-bf69-8f3d0f52a0c2');
+var element = document.getElementById('27548f58-86b6-45ec-ad6e-27e65027887b');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "dea670c2e7c243a885286ccbf933c65f", "version_major": 2, "version_minor": 0}
+{"model_id": "48be2a72e3f841d99075ff8647db28b3", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14555,9 +14502,9 @@ var element = document.getElementById('baf6e618-0d6e-4e90-bf69-8f3d0f52a0c2');
 
 
 
-<div id="31b25caf-4774-4469-97d6-68d0d6c82093" class="jupyter-widgets jp-OutputArea-output ">
+<div id="fbfc119e-5c85-404f-90d7-38db63c8f6b3" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('31b25caf-4774-4469-97d6-68d0d6c82093');
+var element = document.getElementById('fbfc119e-5c85-404f-90d7-38db63c8f6b3');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14573,7 +14520,7 @@ var element = document.getElementById('31b25caf-4774-4469-97d6-68d0d6c82093');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[264]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python2"><pre><span></span><span class="n">filtered</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -14600,12 +14547,12 @@ var element = document.getElementById('31b25caf-4774-4469-97d6-68d0d6c82093');
 
 
 
-<div id="5acec9e0-5b65-4633-ab03-1c0eeda5c717" class="jupyter-widgets jp-OutputArea-output ">
+<div id="c0df9336-5217-44dc-bbe9-af545a3b4ee1" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('5acec9e0-5b65-4633-ab03-1c0eeda5c717');
+var element = document.getElementById('c0df9336-5217-44dc-bbe9-af545a3b4ee1');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "8086613304c94764881c2ae1de8a4cc6", "version_major": 2, "version_minor": 0}
+{"model_id": "9b17314432ca457b926b8c307cb3dc87", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14622,9 +14569,9 @@ var element = document.getElementById('5acec9e0-5b65-4633-ab03-1c0eeda5c717');
 
 
 
-<div id="059fad6d-b1d9-4ccd-85dd-ec6a67bb53ca" class="jupyter-widgets jp-OutputArea-output ">
+<div id="3db9da79-8388-44ed-8336-1ff489e0293b" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('059fad6d-b1d9-4ccd-85dd-ec6a67bb53ca');
+var element = document.getElementById('3db9da79-8388-44ed-8336-1ff489e0293b');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14640,30 +14587,30 @@ var element = document.getElementById('059fad6d-b1d9-4ccd-85dd-ec6a67bb53ca');
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>+--------+------+-----+-----+--------+
-|Survived|   Sex|SibSp|Parch|Embarked|
-+--------+------+-----+-----+--------+
-|       0|  male|    1|    0|       S|
-|       1|female|    1|    0|       C|
-|       1|female|    0|    0|       S|
-|       1|female|    1|    0|       S|
-|       0|  male|    0|    0|       S|
-|       0|  male|    0|    0|       Q|
-|       0|  male|    0|    0|       S|
-|       0|  male|    3|    1|       S|
-|       1|female|    0|    2|       S|
-|       1|female|    1|    0|       C|
-|       1|female|    1|    1|       S|
-|       1|female|    0|    0|       S|
-|       0|  male|    0|    0|       S|
-|       0|  male|    1|    5|       S|
-|       0|female|    0|    0|       S|
-|       1|female|    0|    0|       S|
-|       0|  male|    4|    1|       Q|
-|       1|  male|    0|    0|       S|
-|       0|female|    1|    0|       S|
-|       1|female|    0|    0|       C|
-+--------+------+-----+-----+--------+
+<pre>+-----------+--------+------+-----+-----+--------+
+|PassengerId|Survived|   Sex|SibSp|Parch|Embarked|
++-----------+--------+------+-----+-----+--------+
+|          1|       0|  male|    1|    0|       S|
+|          2|       1|female|    1|    0|       C|
+|          3|       1|female|    0|    0|       S|
+|          4|       1|female|    1|    0|       S|
+|          5|       0|  male|    0|    0|       S|
+|          6|       0|  male|    0|    0|       Q|
+|          7|       0|  male|    0|    0|       S|
+|          8|       0|  male|    3|    1|       S|
+|          9|       1|female|    0|    2|       S|
+|         10|       1|female|    1|    0|       C|
+|         11|       1|female|    1|    1|       S|
+|         12|       1|female|    0|    0|       S|
+|         13|       0|  male|    0|    0|       S|
+|         14|       0|  male|    1|    5|       S|
+|         15|       0|female|    0|    0|       S|
+|         16|       1|female|    0|    0|       S|
+|         17|       0|  male|    4|    1|       Q|
+|         18|       1|  male|    0|    0|       S|
+|         19|       0|female|    1|    0|       S|
+|         20|       1|female|    0|    0|       C|
++-----------+--------+------+-----+-----+--------+
 only showing top 20 rows</pre>
 </div>
 </div>
@@ -14675,11 +14622,10 @@ only showing top 20 rows</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[265]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.sql.functions</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">pyspark.sql.types</span> <span class="kn">import</span> <span class="o">*</span>
+<div class=" highlight hl-python2"><pre><span></span><span class="n">filtered</span><span class="o">.</span><span class="n">schema</span><span class="o">.</span><span class="n">names</span>
 </pre></div>
 
      </div>
@@ -14703,12 +14649,12 @@ only showing top 20 rows</pre>
 
 
 
-<div id="b61b8080-951b-478f-8ab2-bc7454d58083" class="jupyter-widgets jp-OutputArea-output ">
+<div id="e003fc2c-4a63-48ec-9c79-29681611a950" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('b61b8080-951b-478f-8ab2-bc7454d58083');
+var element = document.getElementById('e003fc2c-4a63-48ec-9c79-29681611a950');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "af79670063d44a70a421c605e640dad8", "version_major": 2, "version_minor": 0}
+{"model_id": "cb591f32964d43b19341e3dddd0c5ac2", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14725,9 +14671,89 @@ var element = document.getElementById('b61b8080-951b-478f-8ab2-bc7454d58083');
 
 
 
-<div id="f32f589e-331e-43c8-b602-72eb3d61ae29" class="jupyter-widgets jp-OutputArea-output ">
+<div id="e4d4e87b-9c16-44c2-be54-8655fca359ab" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('f32f589e-331e-43c8-b602-72eb3d61ae29');
+var element = document.getElementById('e4d4e87b-9c16-44c2-be54-8655fca359ab');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[&#39;PassengerId&#39;, &#39;Survived&#39;, &#39;Sex&#39;, &#39;SibSp&#39;, &#39;Parch&#39;, &#39;Embarked&#39;]</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python2"><pre><span></span><span class="kn">from</span> <span class="nn">pyspark.sql.functions</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">pyspark.sql.types</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="5771c322-5720-435d-90a0-dae226d934ad" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('5771c322-5720-435d-90a0-dae226d934ad');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "29e7fbb329b0432cb83ae89788d831de", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="41fb82b5-e2f0-4c17-b030-b31b8473e068" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('41fb82b5-e2f0-4c17-b030-b31b8473e068');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14743,7 +14769,7 @@ var element = document.getElementById('f32f589e-331e-43c8-b602-72eb3d61ae29');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[266]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python2"><pre><span></span><span class="k">def</span> <span class="nf">calTargetEntropy</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
@@ -14757,22 +14783,21 @@ var element = document.getElementById('f32f589e-331e-43c8-b602-72eb3d61ae29');
   <span class="n">filtered</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="n">colName</span><span class="p">)</span> <span class="o">==</span> <span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">colName</span><span class="p">)</span>
   <span class="k">return</span> <span class="n">filtered</span>
 
-<span class="k">def</span> <span class="nf">getBestFeature</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
-
+<span class="k">def</span> <span class="nf">getBestFeature</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">serial</span><span class="p">):</span>
   <span class="n">columns</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">schema</span><span class="o">.</span><span class="n">names</span>
-  <span class="n">bestGain</span> <span class="o">=</span> <span class="mf">0.0</span>
+  <span class="n">bestGain</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
   <span class="n">bestFeature</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
   <span class="n">total</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
   <span class="n">targetEntropy</span> <span class="o">=</span> <span class="n">calTargetEntropy</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
   <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">columns</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span> <span class="k">continue</span>
+    <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="n">target</span> <span class="ow">or</span> <span class="n">name</span> <span class="o">==</span> <span class="n">serial</span><span class="p">:</span> <span class="k">continue</span>
     <span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
     <span class="n">totaldf</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">toDF</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;totalcount&quot;</span><span class="p">)</span>
     <span class="n">joindf</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">totaldf</span><span class="p">,</span> <span class="n">on</span> <span class="o">=</span> <span class="p">[</span><span class="n">name</span><span class="p">])</span>
     <span class="n">resultdf</span> <span class="o">=</span> <span class="n">joindf</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;proc&quot;</span><span class="p">,</span> <span class="n">col</span><span class="p">(</span><span class="s2">&quot;count&quot;</span><span class="p">)</span> <span class="o">/</span> <span class="n">col</span><span class="p">(</span><span class="s2">&quot;totalcount&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;entropy&quot;</span><span class="p">,</span> <span class="o">-</span> <span class="n">col</span><span class="p">(</span><span class="s2">&quot;proc&quot;</span><span class="p">)</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">col</span><span class="p">(</span><span class="s2">&quot;proc&quot;</span><span class="p">)))</span><span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s2">&quot;entropy&quot;</span><span class="p">:</span><span class="s2">&quot;sum&quot;</span><span class="p">})</span><span class="o">.</span><span class="n">toDF</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;entropy&quot;</span><span class="p">)</span>
     <span class="n">procdf</span> <span class="o">=</span> <span class="n">totaldf</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;proc&quot;</span><span class="p">,</span> <span class="n">col</span><span class="p">(</span><span class="s2">&quot;totalcount&quot;</span><span class="p">)</span> <span class="o">/</span> <span class="n">lit</span><span class="p">(</span><span class="n">total</span><span class="p">))</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;proc&quot;</span><span class="p">)</span>
     <span class="n">entropy</span> <span class="o">=</span> <span class="n">resultdf</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">procdf</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="n">name</span><span class="p">])</span><span class="o">.</span><span class="n">withColumn</span><span class="p">(</span><span class="s2">&quot;mul&quot;</span><span class="p">,</span> <span class="n">col</span><span class="p">(</span><span class="s2">&quot;proc&quot;</span><span class="p">)</span> <span class="o">*</span> <span class="n">col</span><span class="p">(</span><span class="s2">&quot;entropy&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s2">&quot;mul&quot;</span><span class="p">:</span> <span class="s2">&quot;sum&quot;</span><span class="p">})</span><span class="o">.</span><span class="n">collect</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  
-    <span class="k">if</span> <span class="n">targetEntropy</span> <span class="o">-</span> <span class="n">entropy</span> <span class="o">&gt;=</span> <span class="n">bestGain</span><span class="p">:</span> <span class="c1"># use larger or equal to avoid returning emtpy string</span>
+    <span class="k">if</span> <span class="n">targetEntropy</span> <span class="o">-</span> <span class="n">entropy</span> <span class="o">&gt;</span> <span class="n">bestGain</span><span class="p">:</span> 
       <span class="n">bestGain</span> <span class="o">=</span> <span class="n">targetEntropy</span> <span class="o">-</span> <span class="n">entropy</span>
       <span class="n">bestFeature</span> <span class="o">=</span> <span class="n">name</span>
   <span class="k">return</span> <span class="n">bestFeature</span>
@@ -14780,10 +14805,10 @@ var element = document.getElementById('f32f589e-331e-43c8-b602-72eb3d61ae29');
 <span class="k">def</span> <span class="nf">getMajorClass</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
   <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">target</span><span class="p">)</span><span class="o">.</span><span class="n">groupBy</span><span class="p">(</span><span class="n">target</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;count&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">desc</span><span class="p">())</span><span class="o">.</span><span class="n">collect</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 
-<span class="k">def</span> <span class="nf">createDecisionTree</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span> 
-  <span class="n">schema</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">schema</span><span class="o">.</span><span class="n">names</span>
- <span class="c1"># if target not in schema or data.count() &lt; 1:</span>
- <span class="c1">#   return &quot;null&quot;</span>
+<span class="k">def</span> <span class="nf">createDecisionTree</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">serial</span><span class="p">):</span> 
+  <span class="n">schema</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">schema</span><span class="o">.</span><span class="n">names</span><span class="p">)</span>
+  <span class="n">schema</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
+  <span class="n">schema</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">serial</span><span class="p">)</span>
   
   <span class="n">targetClasses</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">target</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">()</span><span class="o">.</span><span class="n">rdd</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">r</span> <span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
   <span class="c1"># stop when only one category left</span>
@@ -14791,19 +14816,18 @@ var element = document.getElementById('f32f589e-331e-43c8-b602-72eb3d61ae29');
     <span class="k">return</span> <span class="n">targetClasses</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
   
   <span class="c1"># return major classes when only one feature left</span>
-  <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">schema</span><span class="o">.</span><span class="n">names</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+  <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">schema</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
     <span class="k">return</span> <span class="n">getMajorClass</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
   
-  <span class="n">bestFeature</span> <span class="o">=</span> <span class="n">getBestFeature</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+  <span class="n">bestFeature</span> <span class="o">=</span> <span class="n">getBestFeature</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">serial</span><span class="p">)</span>
   
   <span class="n">tree</span> <span class="o">=</span> <span class="p">{</span><span class="n">bestFeature</span><span class="p">:</span> <span class="p">{}}</span>
 
-  <span class="n">columns</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">schema</span><span class="o">.</span><span class="n">names</span>
   <span class="n">values</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">bestFeature</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">()</span><span class="o">.</span><span class="n">rdd</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">r</span> <span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
   <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">value</span><span class="p">:</span>
         <span class="n">nullValue</span> <span class="o">=</span> <span class="n">value</span>
-    <span class="n">tree</span><span class="p">[</span><span class="n">bestFeature</span><span class="p">][</span><span class="n">value</span><span class="p">]</span> <span class="o">=</span> <span class="n">createDecisionTree</span><span class="p">(</span><span class="n">filterData</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">bestFeature</span><span class="p">,</span> <span class="n">value</span><span class="p">),</span> <span class="n">target</span><span class="p">)</span>
+    <span class="n">tree</span><span class="p">[</span><span class="n">bestFeature</span><span class="p">][</span><span class="n">value</span><span class="p">]</span> <span class="o">=</span> <span class="n">createDecisionTree</span><span class="p">(</span><span class="n">filterData</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">bestFeature</span><span class="p">,</span> <span class="n">value</span><span class="p">),</span> <span class="n">target</span><span class="p">,</span> <span class="n">serial</span><span class="p">)</span>
     
   <span class="k">return</span> <span class="n">tree</span>
 </pre></div>
@@ -14829,12 +14853,12 @@ var element = document.getElementById('f32f589e-331e-43c8-b602-72eb3d61ae29');
 
 
 
-<div id="6086b75e-5685-4cbd-bd49-1028f0cc54bc" class="jupyter-widgets jp-OutputArea-output ">
+<div id="5268f409-2ee7-42c1-9bf2-cc3bed2c2907" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('6086b75e-5685-4cbd-bd49-1028f0cc54bc');
+var element = document.getElementById('5268f409-2ee7-42c1-9bf2-cc3bed2c2907');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "342dc0e460c24b87bf3cf3754c68d731", "version_major": 2, "version_minor": 0}
+{"model_id": "80df73d3270b4069ad7edad212175b20", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14851,9 +14875,9 @@ var element = document.getElementById('6086b75e-5685-4cbd-bd49-1028f0cc54bc');
 
 
 
-<div id="2094d2cb-1ab8-4534-8901-e0e98b2bdbc3" class="jupyter-widgets jp-OutputArea-output ">
+<div id="feda8644-8c03-4c1d-9ce7-cb4acc9f9e62" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('2094d2cb-1ab8-4534-8901-e0e98b2bdbc3');
+var element = document.getElementById('feda8644-8c03-4c1d-9ce7-cb4acc9f9e62');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14869,10 +14893,10 @@ var element = document.getElementById('2094d2cb-1ab8-4534-8901-e0e98b2bdbc3');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[267]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="n">tree</span> <span class="o">=</span> <span class="n">createDecisionTree</span><span class="p">(</span><span class="n">filtered</span><span class="p">,</span> <span class="s2">&quot;Survived&quot;</span><span class="p">)</span>
+<div class=" highlight hl-python2"><pre><span></span><span class="n">tree</span> <span class="o">=</span> <span class="n">createDecisionTree</span><span class="p">(</span><span class="n">filtered</span><span class="p">,</span> <span class="s2">&quot;Survived&quot;</span><span class="p">,</span> <span class="s2">&quot;PassengerId&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14896,12 +14920,12 @@ var element = document.getElementById('2094d2cb-1ab8-4534-8901-e0e98b2bdbc3');
 
 
 
-<div id="701cb89b-3a51-4310-8777-833cdaedf878" class="jupyter-widgets jp-OutputArea-output ">
+<div id="049772ad-db30-4cfa-851f-4c1906b57025" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('701cb89b-3a51-4310-8777-833cdaedf878');
+var element = document.getElementById('049772ad-db30-4cfa-851f-4c1906b57025');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "cd3e94b5b9ab4479b392cfb22e064dfc", "version_major": 2, "version_minor": 0}
+{"model_id": "02ad2632a85845b78cc7b19fdc08ebb1", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -14918,9 +14942,9 @@ var element = document.getElementById('701cb89b-3a51-4310-8777-833cdaedf878');
 
 
 
-<div id="288655b8-5626-44ff-9bb0-1979193965ae" class="jupyter-widgets jp-OutputArea-output ">
+<div id="c03a22c6-f151-46ca-9dab-67566d691fad" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('288655b8-5626-44ff-9bb0-1979193965ae');
+var element = document.getElementById('c03a22c6-f151-46ca-9dab-67566d691fad');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -14936,7 +14960,7 @@ var element = document.getElementById('288655b8-5626-44ff-9bb0-1979193965ae');
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>Exception in thread cell_monitor-267:
+<pre>Exception in thread cell_monitor-20:
 Traceback (most recent call last):
   File &#34;/opt/conda/lib/python3.7/threading.py&#34;, line 926, in _bootstrap_inner
     self.run()
@@ -14944,7 +14968,7 @@ Traceback (most recent call last):
     self._target(*self._args, **self._kwargs)
   File &#34;/opt/conda/lib/python3.7/site-packages/awseditorssparkmonitoringwidget-1.0-py3.7.egg/awseditorssparkmonitoringwidget/cellmonitor.py&#34;, line 178, in cell_monitor
     job_binned_stages[job_id][stage_id] = all_stages[stage_id]
-KeyError: 25993
+KeyError: 1329
 
 </pre>
 </div>
@@ -14957,7 +14981,7 @@ KeyError: 25993
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[268]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python2"><pre><span></span><span class="n">tree</span>
@@ -14984,12 +15008,12 @@ KeyError: 25993
 
 
 
-<div id="5e5446c9-ae50-4105-91da-c44c5e7cc8f8" class="jupyter-widgets jp-OutputArea-output ">
+<div id="525d6ad3-cd8c-47bd-862f-9138649606fd" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('5e5446c9-ae50-4105-91da-c44c5e7cc8f8');
+var element = document.getElementById('525d6ad3-cd8c-47bd-862f-9138649606fd');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "c37ed22caf8440249df4c51af45ad787", "version_major": 2, "version_minor": 0}
+{"model_id": "3537ec428b444f8e94a4fe06b8c2ce6a", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15006,9 +15030,9 @@ var element = document.getElementById('5e5446c9-ae50-4105-91da-c44c5e7cc8f8');
 
 
 
-<div id="f259d5f8-4145-4a31-81a6-d602dd17a345" class="jupyter-widgets jp-OutputArea-output ">
+<div id="a2350de9-cb7c-406b-81df-78d1d9863dc1" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('f259d5f8-4145-4a31-81a6-d602dd17a345');
+var element = document.getElementById('a2350de9-cb7c-406b-81df-78d1d9863dc1');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15024,7 +15048,7 @@ var element = document.getElementById('f259d5f8-4145-4a31-81a6-d602dd17a345');
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;Sex&#39;: {&#39;male&#39;: {&#39;SibSp&#39;: {1: {&#39;Parch&#39;: {1: {&#39;Embarked&#39;: {&#39;S&#39;: 0, &#39;C&#39;: 1, &#39;Q&#39;: 0}}, 3: 0, 4: 0, 5: 0, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 0}}, 0: {&#39;Embarked&#39;: {&#39;S&#39;: 0, &#39;C&#39;: 0, &#39;Q&#39;: 0}}}}, 3: 0, 4: {&#39;Parch&#39;: {1: 0, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 0}}}}, 8: 0, 5: 0, 2: {&#39;Embarked&#39;: {&#39;S&#39;: {&#39;Parch&#39;: {1: 1, 0: 0}}, &#39;C&#39;: 0, &#39;Q&#39;: {&#39;Parch&#39;: {0: 1}}}}, 0: {&#39;Parch&#39;: {1: {&#39;Embarked&#39;: {&#39;S&#39;: 0, &#39;C&#39;: 0}}, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1}}, 0: {&#39;Embarked&#39;: {&#39;S&#39;: 0, &#39;C&#39;: 0, &#39;Q&#39;: 0}}}}}}, &#39;female&#39;: {&#39;SibSp&#39;: {1: {&#39;Parch&#39;: {1: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1, &#39;Q&#39;: 0}}, 6: 0, 3: {&#39;Embarked&#39;: {&#39;S&#39;: 1}}, 4: 0, 5: {&#39;Embarked&#39;: {&#39;S&#39;: 1}}, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1}}, 0: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1, &#39;Q&#39;: 1}}}}, 3: {&#39;Parch&#39;: {1: 0, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 1}}, 0: 1}}, 4: {&#39;Embarked&#39;: {&#39;S&#39;: {&#39;Parch&#39;: {2: 0}}}}, 8: 0, 5: 0, 2: {&#39;Parch&#39;: {1: 1, 3: 1, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 0, &#39;C&#39;: 1}}, 0: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;Q&#39;: 1}}}}, 0: {&#39;Parch&#39;: {1: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1}}, 3: 1, 4: 0, 5: 0, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1, &#39;Q&#39;: 0}}, 0: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1, &#39;Q&#39;: 1}}}}}}}}</pre>
+<pre>{&#39;Sex&#39;: {&#39;male&#39;: {&#39;SibSp&#39;: {1: {&#39;Parch&#39;: {1: {&#39;Embarked&#39;: {&#39;S&#39;: 0, &#39;C&#39;: 1, &#39;Q&#39;: 0}}, 3: 0, 4: 0, 5: 0, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 0}}, 0: {&#39;Embarked&#39;: {&#39;S&#39;: 0, &#39;C&#39;: 0, &#39;Q&#39;: 0}}}}, 3: 0, 4: {&#39;Parch&#39;: {1: 0, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 0}}}}, 8: 0, 5: 0, 2: {&#39;Embarked&#39;: {&#39;S&#39;: {&#39;Parch&#39;: {1: 1, 0: 0}}, &#39;C&#39;: 0, &#39;Q&#39;: {&#39;Parch&#39;: {0: 1}}}}, 0: {&#39;Parch&#39;: {1: {&#39;Embarked&#39;: {&#39;S&#39;: 0, &#39;C&#39;: 0}}, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1}}, 0: {&#39;Embarked&#39;: {&#39;S&#39;: 0, &#39;C&#39;: 0, &#39;Q&#39;: 0}}}}}}, &#39;female&#39;: {&#39;SibSp&#39;: {1: {&#39;Parch&#39;: {1: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1, &#39;Q&#39;: 0}}, 6: 0, 3: {&#39;Embarked&#39;: {&#39;S&#39;: 1}}, 4: 0, 5: {&#39;Embarked&#39;: {&#39;S&#39;: 1}}, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1}}, 0: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1, &#39;Q&#39;: 1}}}}, 3: {&#39;Parch&#39;: {1: 0, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 1}}, 0: 1}}, 4: {&#39;Parch&#39;: {2: {&#39;Embarked&#39;: {&#39;S&#39;: 0}}}}, 8: 0, 5: 0, 2: {&#39;Parch&#39;: {1: 1, 3: 1, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 0, &#39;C&#39;: 1}}, 0: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;Q&#39;: 1}}}}, 0: {&#39;Parch&#39;: {1: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1}}, 3: 1, 4: 0, 5: 0, 2: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1, &#39;Q&#39;: 0}}, 0: {&#39;Embarked&#39;: {&#39;S&#39;: 1, &#39;C&#39;: 1, &#39;Q&#39;: 1}}}}}}}}</pre>
 </div>
 </div>
 
@@ -15035,7 +15059,7 @@ var element = document.getElementById('f259d5f8-4145-4a31-81a6-d602dd17a345');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[269]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[96]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python2"><pre><span></span><span class="k">def</span> <span class="nf">classify</span><span class="p">(</span><span class="n">dataDict</span><span class="p">,</span> <span class="n">tree</span><span class="p">):</span>
@@ -15045,7 +15069,12 @@ var element = document.getElementById('f259d5f8-4145-4a31-81a6-d602dd17a345');
     
     <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;null&quot;</span>
-    <span class="n">nextDict</span> <span class="o">=</span> <span class="n">secondDict</span><span class="p">[</span><span class="n">value</span><span class="p">]</span>
+    
+    <span class="k">if</span> <span class="n">value</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">secondDict</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">secKey</span> <span class="ow">in</span> <span class="n">secondDict</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">nextDict</span> <span class="o">=</span> <span class="n">secondDict</span><span class="p">[</span><span class="n">secKey</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>  
+        <span class="n">nextDict</span> <span class="o">=</span> <span class="n">secondDict</span><span class="p">[</span><span class="n">value</span><span class="p">]</span>
 
   <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">nextDict</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">classify</span><span class="p">(</span><span class="n">dataDict</span><span class="p">,</span> <span class="n">nextDict</span><span class="p">)</span>
@@ -15074,12 +15103,12 @@ var element = document.getElementById('f259d5f8-4145-4a31-81a6-d602dd17a345');
 
 
 
-<div id="197b1f4b-97ae-402d-b1f1-a1f4b7c51896" class="jupyter-widgets jp-OutputArea-output ">
+<div id="6e848a76-1d22-4fc2-8787-701ee5778679" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('197b1f4b-97ae-402d-b1f1-a1f4b7c51896');
+var element = document.getElementById('6e848a76-1d22-4fc2-8787-701ee5778679');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "f57ea37475ea40f09a4e038766aa7621", "version_major": 2, "version_minor": 0}
+{"model_id": "56adc21969d34d65b161949df094738e", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15096,9 +15125,9 @@ var element = document.getElementById('197b1f4b-97ae-402d-b1f1-a1f4b7c51896');
 
 
 
-<div id="dff68911-1e4b-4ce6-81cd-997dbbda4ee7" class="jupyter-widgets jp-OutputArea-output ">
+<div id="247ecc7a-9f1e-4307-a64d-36a681c7af80" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('dff68911-1e4b-4ce6-81cd-997dbbda4ee7');
+var element = document.getElementById('247ecc7a-9f1e-4307-a64d-36a681c7af80');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15114,14 +15143,12 @@ var element = document.getElementById('dff68911-1e4b-4ce6-81cd-997dbbda4ee7');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[270]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[97]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python2"><pre><span></span><span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
-  <span class="k">global</span> <span class="n">emptyTree</span><span class="p">,</span> <span class="n">emptySecDict</span><span class="p">,</span> <span class="n">emptyDataDict</span><span class="p">,</span> <span class="n">emptyKey</span>
   <span class="n">result</span> <span class="o">=</span> <span class="n">classify</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">asDict</span><span class="p">(),</span> <span class="n">tree</span><span class="p">)</span>
-  <span class="n">check</span> <span class="o">=</span> <span class="n">result</span> <span class="o">==</span> <span class="n">row</span><span class="o">.</span><span class="n">Survived</span>
-  <span class="k">return</span> <span class="p">[</span><span class="n">result</span><span class="p">,</span> <span class="n">row</span><span class="o">.</span><span class="n">Survived</span><span class="p">,</span> <span class="n">check</span><span class="p">]</span>
+  <span class="k">return</span> <span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">PassengerId</span><span class="p">,</span> <span class="n">result</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15145,12 +15172,12 @@ var element = document.getElementById('dff68911-1e4b-4ce6-81cd-997dbbda4ee7');
 
 
 
-<div id="611ff26a-2933-4dea-9e42-6a880dfc87b2" class="jupyter-widgets jp-OutputArea-output ">
+<div id="b195839a-8109-41f2-b758-0c8eb10d7d1c" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('611ff26a-2933-4dea-9e42-6a880dfc87b2');
+var element = document.getElementById('b195839a-8109-41f2-b758-0c8eb10d7d1c');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "82d96bac23bb47b880e22cec325f23dc", "version_major": 2, "version_minor": 0}
+{"model_id": "ed67cc10fb2f4de48a057a079745a3c2", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15167,9 +15194,9 @@ var element = document.getElementById('611ff26a-2933-4dea-9e42-6a880dfc87b2');
 
 
 
-<div id="ad5c5ad3-6427-47f7-ac91-5b5f481fd98b" class="jupyter-widgets jp-OutputArea-output ">
+<div id="92bb6a46-b2c4-4fd2-ad95-7d780594a5bb" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('ad5c5ad3-6427-47f7-ac91-5b5f481fd98b');
+var element = document.getElementById('92bb6a46-b2c4-4fd2-ad95-7d780594a5bb');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15185,10 +15212,10 @@ var element = document.getElementById('ad5c5ad3-6427-47f7-ac91-5b5f481fd98b');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[271]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[98]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="n">test</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">rdd</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">fit</span><span class="p">)</span>
+<div class=" highlight hl-python2"><pre><span></span><span class="n">testData</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="s2">&quot;s3://decisiontree-bigdata/Titanic_test.csv&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">inferSchema</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15212,12 +15239,12 @@ var element = document.getElementById('ad5c5ad3-6427-47f7-ac91-5b5f481fd98b');
 
 
 
-<div id="862e9576-2f16-4995-89cc-d40fdcc96204" class="jupyter-widgets jp-OutputArea-output ">
+<div id="c2524155-70cf-4790-a72c-8db45299ca59" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('862e9576-2f16-4995-89cc-d40fdcc96204');
+var element = document.getElementById('c2524155-70cf-4790-a72c-8db45299ca59');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "fd4fc778e32f41e98dca73dae0539a11", "version_major": 2, "version_minor": 0}
+{"model_id": "bf629faa33324cfaa951a5e9c1133b85", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15234,9 +15261,9 @@ var element = document.getElementById('862e9576-2f16-4995-89cc-d40fdcc96204');
 
 
 
-<div id="2e3f26b8-fdaf-47c3-b9a2-f00f470ad6bd" class="jupyter-widgets jp-OutputArea-output ">
+<div id="4cc0ceca-1afa-4720-ad71-1a7ae7e1d8d0" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('2e3f26b8-fdaf-47c3-b9a2-f00f470ad6bd');
+var element = document.getElementById('4cc0ceca-1afa-4720-ad71-1a7ae7e1d8d0');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15252,7 +15279,219 @@ var element = document.getElementById('2e3f26b8-fdaf-47c3-b9a2-f00f470ad6bd');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[272]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[99]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python2"><pre><span></span><span class="n">totalCount</span> <span class="o">=</span> <span class="n">testData</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="42259c28-18a6-47da-a04b-d106edb69034" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('42259c28-18a6-47da-a04b-d106edb69034');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "d3e13f7996bf4e40b64c1dafa1159857", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="fc7e5af3-6351-4405-abcc-6c8a6020f7e8" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('fc7e5af3-6351-4405-abcc-6c8a6020f7e8');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[100]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python2"><pre><span></span><span class="n">totalCount</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="ee928c3e-05f7-40e0-9e57-c15f7b4db7a9" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('ee928c3e-05f7-40e0-9e57-c15f7b4db7a9');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "a1d8052df83449e3b9cd3a3a5a088c9e", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="bd4c4585-ba53-45b1-a89f-267ffac32c72" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('bd4c4585-ba53-45b1-a89f-267ffac32c72');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>418</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[101]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python2"><pre><span></span><span class="n">test</span> <span class="o">=</span> <span class="n">testData</span><span class="o">.</span><span class="n">rdd</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">fit</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="86eb36f5-3237-4acc-989e-935d571a0a97" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('86eb36f5-3237-4acc-989e-935d571a0a97');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "eb66b4d3a44947108e10d87859779681", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="576a1493-aac5-4246-95a0-5d4d8ce368d8" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('576a1493-aac5-4246-95a0-5d4d8ce368d8');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[102]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python2"><pre><span></span><span class="n">test</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
@@ -15279,12 +15518,12 @@ var element = document.getElementById('2e3f26b8-fdaf-47c3-b9a2-f00f470ad6bd');
 
 
 
-<div id="098d42b3-55fc-44dc-b08d-7746a2cef607" class="jupyter-widgets jp-OutputArea-output ">
+<div id="7b09d940-1698-4785-b349-35726d6a4be5" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('098d42b3-55fc-44dc-b08d-7746a2cef607');
+var element = document.getElementById('7b09d940-1698-4785-b349-35726d6a4be5');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "3d19ea85026f4bca99273ecea0062790", "version_major": 2, "version_minor": 0}
+{"model_id": "595ed3a0e325499f9ad2f23ac4ed6200", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15301,87 +15540,9 @@ var element = document.getElementById('098d42b3-55fc-44dc-b08d-7746a2cef607');
 
 
 
-<div id="47ad1912-6b01-452f-a0a8-d8d15844b3d5" class="jupyter-widgets jp-OutputArea-output ">
+<div id="ab1a312e-3a68-4dfb-a0fa-66872cfa35ba" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('47ad1912-6b01-452f-a0a8-d8d15844b3d5');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[[0, 0, True], [1, 1, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 0, False], [1, 1, True], [0, 0, True], [0, 1, False], [1, 0, False], [1, 1, True], [0, 0, True], [0, 1, False], [1, 1, True], [0, 1, False], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [1, 0, False], [1, 1, True], [1, 0, False], [1, 0, False], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 1, False], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [&#39;null&#39;, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 1, False], [1, 1, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 1, False], [1, 1, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 1, False], [0, 0, True], [1, 1, True], [0, 0, True], [1, 0, False], [0, 0, True], [1, 0, False], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 1, False], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 1, True], [0, 1, False], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [0, 1, False], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 1, False], [1, 0, False], [0, 0, True], [0, 1, False], [1, 1, True], [0, 1, False], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [1, 0, False], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 0, False], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [1, 0, False], [1, 1, True], [0, 1, False], [0, 0, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [1, 0, False], [1, 1, True], [1, 1, True], [1, 1, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 1, False], [1, 1, True], [1, 1, True], [0, 0, True], [0, 1, False], [1, 1, True], [0, 0, True], [1, 1, True], [1, 1, True], [1, 0, False], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 1, False], [1, 1, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [0, 1, False], [1, 1, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 1, True], [1, 1, True], [1, 1, True], [1, 0, False], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [1, 1, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 1, False], [0, 0, True], [0, 1, False], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [1, 1, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 0, False], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [1, 1, True], [1, 1, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [1, 0, False], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 1, False], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [1, 1, True], [0, 1, False], [0, 0, True], [1, 0, False], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 1, False], [1, 0, False], [1, 1, True], [1, 1, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 1, False], [0, 1, False], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 1, False], [1, 1, True], [1, 1, True], [0, 1, False], [1, 1, True], [0, 1, False], [1, 0, False], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 1, False], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 1, False], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [1, 0, False], [1, 0, False], [1, 0, False], [1, 1, True], [0, 0, True], [1, 1, True], [0, 1, False], [0, 0, True], [0, 1, False], [0, 1, False], [0, 0, True], [0, 1, False], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 0, False], [1, 1, True], [0, 0, True], [1, 0, False], [1, 1, True], [1, 0, False], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [1, 1, True], [0, 1, False], [0, 0, True], [0, 1, False], [1, 1, True], [0, 0, True], [0, 0, True], [0, 1, False], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 1, False], [1, 1, True], [0, 1, False], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [1, 0, False], [0, 1, False], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 1, False], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 1, False], [1, 1, True], [1, 1, True], [1, 0, False], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 0, False], [1, 1, True], [0, 0, True], [0, 0, True], [0, 1, False], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 1, False], [0, 0, True], [1, 0, False], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 0, False], [0, 1, False], [1, 1, True], [0, 1, False], [0, 0, True], [0, 1, False], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 1, False], [1, 0, False], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 1, False], [1, 1, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 0, False], [0, 0, True], [1, 1, True], [0, 1, False], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 1, False], [1, 1, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 0, False], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [0, 1, False], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [1, 1, True], [0, 0, True], [0, 1, False], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 1, False], [0, 0, True], [0, 0, True], [1, 1, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 1, False], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 0, False], [0, 0, True], [1, 1, True], [1, 1, True], [0, 1, False], [0, 1, False], [0, 0, True], [0, 0, True], [1, 0, False], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 0, False], [1, 0, False], [0, 0, True], [0, 0, True], [1, 1, True], [0, 1, False], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 1, False], [&#39;null&#39;, 1, False], [1, 1, True], [0, 1, False], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 1, False], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 0, False], [1, 1, True], [1, 0, False], [1, 1, True], [1, 1, True], [0, 1, False], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 1, False], [0, 0, True], [1, 1, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 1, True], [0, 0, True], [1, 0, False], [0, 0, True], [0, 0, True], [0, 0, True], [0, 0, True], [1, 1, True], [1, 0, False], [0, 1, False], [0, 0, True]]</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[273]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="n">emptyValue</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="79d4980b-531d-4c5f-b916-016e67e840d2" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('79d4980b-531d-4c5f-b916-016e67e840d2');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "f96028a45b934534b8a1a942bc7d978c", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="f3c1dfe4-5275-4fe8-95ac-b98cf922f9f3" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('f3c1dfe4-5275-4fe8-95ac-b98cf922f9f3');
+var element = document.getElementById('ab1a312e-3a68-4dfb-a0fa-66872cfa35ba');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15397,7 +15558,7 @@ var element = document.getElementById('f3c1dfe4-5275-4fe8-95ac-b98cf922f9f3');
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&#39;notChanged&#39;</pre>
+<pre>[[892, 0], [893, 1], [894, 0], [895, 0], [896, 1], [897, 0], [898, 1], [899, 0], [900, 1], [901, 0], [902, 0], [903, 0], [904, 1], [905, 0], [906, 1], [907, 1], [908, 0], [909, 0], [910, 1], [911, 1], [912, 0], [913, 0], [914, 1], [915, 0], [916, 1], [917, 0], [918, 1], [919, 0], [920, 0], [921, 0], [922, 0], [923, 0], [924, 1], [925, 1], [926, 0], [927, 0], [928, 1], [929, 1], [930, 0], [931, 0], [932, 0], [933, 0], [934, 0], [935, 1], [936, 1], [937, 0], [938, 0], [939, 0], [940, 1], [941, 1], [942, 0], [943, 0], [944, 1], [945, 1], [946, 0], [947, 0], [948, 0], [949, 0], [950, 0], [951, 1], [952, 0], [953, 0], [954, 0], [955, 1], [956, 0], [957, 1], [958, 1], [959, 0], [960, 0], [961, 0], [962, 1], [963, 0], [964, 1], [965, 0], [966, 1], [967, 0], [968, 0], [969, 1], [970, 0], [971, 1], [972, 1], [973, 0], [974, 0], [975, 0], [976, 0], [977, 0], [978, 1], [979, 1], [980, 1], [981, 0], [982, 1], [983, 0], [984, 1], [985, 0], [986, 0], [987, 0], [988, 1], [989, 0], [990, 1], [991, 0], [992, 1], [993, 0], [994, 0], [995, 0], [996, 1], [997, 0], [998, 0], [999, 0], [1000, 0], [1001, 0], [1002, 0], [1003, 1], [1004, 1], [1005, 1], [1006, 1], [1007, 0], [1008, 0], [1009, 1], [1010, 0], [1011, 1], [1012, 1], [1013, 0], [1014, 1], [1015, 0], [1016, 0], [1017, 1], [1018, 0], [1019, 1], [1020, 0], [1021, 0], [1022, 0], [1023, 0], [1024, 0], [1025, 0], [1026, 0], [1027, 0], [1028, 0], [1029, 0], [1030, 1], [1031, 0], [1032, 0], [1033, 1], [1034, 0], [1035, 0], [1036, 0], [1037, 0], [1038, 0], [1039, 0], [1040, 0], [1041, 0], [1042, 1], [1043, 0], [1044, 0], [1045, 1], [1046, 0], [1047, 0], [1048, 1], [1049, 1], [1050, 0], [1051, 1], [1052, 1], [1053, 1], [1054, 1], [1055, 0], [1056, 0], [1057, 1], [1058, 0], [1059, 0], [1060, 1], [1061, 1], [1062, 0], [1063, 0], [1064, 0], [1065, 0], [1066, 0], [1067, 1], [1068, 1], [1069, 0], [1070, 1], [1071, 1], [1072, 0], [1073, 1], [1074, 1], [1075, 0], [1076, 1], [1077, 0], [1078, 1], [1079, 0], [1080, 0], [1081, 0], [1082, 0], [1083, 0], [1084, 0], [1085, 0], [1086, 1], [1087, 0], [1088, 1], [1089, 1], [1090, 0], [1091, 1], [1092, 1], [1093, 1], [1094, 0], [1095, 1], [1096, 0], [1097, 0], [1098, 1], [1099, 0], [1100, 1], [1101, 0], [1102, 0], [1103, 0], [1104, 0], [1105, 1], [1106, 0], [1107, 0], [1108, 1], [1109, 0], [1110, 1], [1111, 0], [1112, 1], [1113, 0], [1114, 1], [1115, 0], [1116, 1], [1117, 1], [1118, 0], [1119, 1], [1120, 0], [1121, 0], [1122, 0], [1123, 1], [1124, 0], [1125, 0], [1126, 0], [1127, 0], [1128, 0], [1129, 0], [1130, 1], [1131, 1], [1132, 1], [1133, 1], [1134, 1], [1135, 0], [1136, 1], [1137, 0], [1138, 1], [1139, 0], [1140, 1], [1141, 1], [1142, 1], [1143, 0], [1144, 0], [1145, 0], [1146, 0], [1147, 0], [1148, 0], [1149, 0], [1150, 1], [1151, 0], [1152, 0], [1153, 0], [1154, 1], [1155, 1], [1156, 0], [1157, 0], [1158, 0], [1159, 0], [1160, 1], [1161, 0], [1162, 0], [1163, 0], [1164, 1], [1165, 1], [1166, 0], [1167, 1], [1168, 0], [1169, 0], [1170, 0], [1171, 0], [1172, 1], [1173, 0], [1174, 1], [1175, 1], [1176, 1], [1177, 0], [1178, 0], [1179, 0], [1180, 0], [1181, 0], [1182, 0], [1183, 1], [1184, 0], [1185, 0], [1186, 0], [1187, 0], [1188, 1], [1189, 0], [1190, 0], [1191, 0], [1192, 0], [1193, 0], [1194, 0], [1195, 0], [1196, 1], [1197, 1], [1198, 1], [1199, 0], [1200, 0], [1201, 1], [1202, 0], [1203, 0], [1204, 0], [1205, 1], [1206, 1], [1207, 1], [1208, 0], [1209, 0], [1210, 0], [1211, 0], [1212, 0], [1213, 0], [1214, 0], [1215, 0], [1216, 1], [1217, 0], [1218, 1], [1219, 0], [1220, 0], [1221, 0], [1222, 1], [1223, 0], [1224, 0], [1225, 1], [1226, 0], [1227, 0], [1228, 0], [1229, 1], [1230, 0], [1231, 0], [1232, 0], [1233, 0], [1234, 0], [1235, 1], [1236, 0], [1237, 1], [1238, 0], [1239, 1], [1240, 0], [1241, 1], [1242, 1], [1243, 0], [1244, 0], [1245, 1], [1246, 1], [1247, 0], [1248, 1], [1249, 0], [1250, 0], [1251, 1], [1252, 0], [1253, 1], [1254, 1], [1255, 0], [1256, 1], [1257, 1], [1258, 0], [1259, 1], [1260, 1], [1261, 0], [1262, 0], [1263, 1], [1264, 0], [1265, 0], [1266, 1], [1267, 1], [1268, 1], [1269, 0], [1270, 0], [1271, 0], [1272, 0], [1273, 0], [1274, 1], [1275, 1], [1276, 0], [1277, 1], [1278, 0], [1279, 0], [1280, 0], [1281, 0], [1282, 0], [1283, 1], [1284, 1], [1285, 0], [1286, 0], [1287, 1], [1288, 0], [1289, 1], [1290, 0], [1291, 0], [1292, 1], [1293, 0], [1294, 1], [1295, 0], [1296, 0], [1297, 0], [1298, 0], [1299, 1], [1300, 1], [1301, 1], [1302, 1], [1303, 1], [1304, 1], [1305, 0], [1306, 1], [1307, 0], [1308, 0], [1309, 1]]</pre>
 </div>
 </div>
 
@@ -15408,10 +15569,11 @@ var element = document.getElementById('f3c1dfe4-5275-4fe8-95ac-b98cf922f9f3');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[274]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[103]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="n">emptyDataDict</span>
+<div class=" highlight hl-python2"><pre><span></span><span class="k">def</span> <span class="nf">toCSVLine</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+  <span class="k">return</span> <span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">data</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15435,12 +15597,12 @@ var element = document.getElementById('f3c1dfe4-5275-4fe8-95ac-b98cf922f9f3');
 
 
 
-<div id="93fed87a-9dca-4211-accf-a51ba01e999b" class="jupyter-widgets jp-OutputArea-output ">
+<div id="976c8a14-f112-4798-acc5-9da727c988c1" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('93fed87a-9dca-4211-accf-a51ba01e999b');
+var element = document.getElementById('976c8a14-f112-4798-acc5-9da727c988c1');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "a99c1b1f31b447939481ab6159a35fea", "version_major": 2, "version_minor": 0}
+{"model_id": "1765ab63a0a14384a4ddf2b45d9cb631", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15457,9 +15619,210 @@ var element = document.getElementById('93fed87a-9dca-4211-accf-a51ba01e999b');
 
 
 
-<div id="8d029505-57f6-4666-818c-81f951e6c9dc" class="jupyter-widgets jp-OutputArea-output ">
+<div id="c2c06c12-3517-439d-a90c-b2aae1d94e6f" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('8d029505-57f6-4666-818c-81f951e6c9dc');
+var element = document.getElementById('c2c06c12-3517-439d-a90c-b2aae1d94e6f');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[104]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python2"><pre><span></span><span class="n">header</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">parallelize</span><span class="p">([[</span><span class="s1">&#39;PassengerId&#39;</span><span class="p">,</span> <span class="s1">&#39;Survived&#39;</span><span class="p">]])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="c680c8b5-26ed-4c54-a489-339b985747c5" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('c680c8b5-26ed-4c54-a489-339b985747c5');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "aed17ec0102b468fabb84580fffe96b9", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="2791b93c-ef2e-418a-9dc4-502bc19416c2" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('2791b93c-ef2e-418a-9dc4-502bc19416c2');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[105]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python2"><pre><span></span><span class="n">finalResult</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="0db37fa0-05de-4cb5-90da-2f551c4de12d" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('0db37fa0-05de-4cb5-90da-2f551c4de12d');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7ee4a32e8c684fe88d0b77c498cb7957", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="19434305-ff40-4a06-8584-29da745d2518" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('19434305-ff40-4a06-8584-29da745d2518');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[106]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python2"><pre><span></span><span class="n">finalResult</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="66cd66be-441e-408e-904f-38164399f676" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('66cd66be-441e-408e-904f-38164399f676');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "7ce2a43467bb451d99e4c80ec6fbd6dd", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+
+
+
+<div id="50625e25-f613-4fe5-8a0e-a6b925ddd6d7" class="jupyter-widgets jp-OutputArea-output ">
+<script type="text/javascript">
+var element = document.getElementById('50625e25-f613-4fe5-8a0e-a6b925ddd6d7');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15475,7 +15838,7 @@ var element = document.getElementById('8d029505-57f6-4666-818c-81f951e6c9dc');
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{}</pre>
+<pre>[[&#39;PassengerId&#39;, &#39;Survived&#39;], [892, 0], [893, 1], [894, 0], [895, 0], [896, 1], [897, 0], [898, 1], [899, 0], [900, 1], [901, 0], [902, 0], [903, 0], [904, 1], [905, 0], [906, 1], [907, 1], [908, 0], [909, 0], [910, 1], [911, 1], [912, 0], [913, 0], [914, 1], [915, 0], [916, 1], [917, 0], [918, 1], [919, 0], [920, 0], [921, 0], [922, 0], [923, 0], [924, 1], [925, 1], [926, 0], [927, 0], [928, 1], [929, 1], [930, 0], [931, 0], [932, 0], [933, 0], [934, 0], [935, 1], [936, 1], [937, 0], [938, 0], [939, 0], [940, 1], [941, 1], [942, 0], [943, 0], [944, 1], [945, 1], [946, 0], [947, 0], [948, 0], [949, 0], [950, 0], [951, 1], [952, 0], [953, 0], [954, 0], [955, 1], [956, 0], [957, 1], [958, 1], [959, 0], [960, 0], [961, 0], [962, 1], [963, 0], [964, 1], [965, 0], [966, 1], [967, 0], [968, 0], [969, 1], [970, 0], [971, 1], [972, 1], [973, 0], [974, 0], [975, 0], [976, 0], [977, 0], [978, 1], [979, 1], [980, 1], [981, 0], [982, 1], [983, 0], [984, 1], [985, 0], [986, 0], [987, 0], [988, 1], [989, 0], [990, 1], [991, 0], [992, 1], [993, 0], [994, 0], [995, 0], [996, 1], [997, 0], [998, 0], [999, 0], [1000, 0], [1001, 0], [1002, 0], [1003, 1], [1004, 1], [1005, 1], [1006, 1], [1007, 0], [1008, 0], [1009, 1], [1010, 0], [1011, 1], [1012, 1], [1013, 0], [1014, 1], [1015, 0], [1016, 0], [1017, 1], [1018, 0], [1019, 1], [1020, 0], [1021, 0], [1022, 0], [1023, 0], [1024, 0], [1025, 0], [1026, 0], [1027, 0], [1028, 0], [1029, 0], [1030, 1], [1031, 0], [1032, 0], [1033, 1], [1034, 0], [1035, 0], [1036, 0], [1037, 0], [1038, 0], [1039, 0], [1040, 0], [1041, 0], [1042, 1], [1043, 0], [1044, 0], [1045, 1], [1046, 0], [1047, 0], [1048, 1], [1049, 1], [1050, 0], [1051, 1], [1052, 1], [1053, 1], [1054, 1], [1055, 0], [1056, 0], [1057, 1], [1058, 0], [1059, 0], [1060, 1], [1061, 1], [1062, 0], [1063, 0], [1064, 0], [1065, 0], [1066, 0], [1067, 1], [1068, 1], [1069, 0], [1070, 1], [1071, 1], [1072, 0], [1073, 1], [1074, 1], [1075, 0], [1076, 1], [1077, 0], [1078, 1], [1079, 0], [1080, 0], [1081, 0], [1082, 0], [1083, 0], [1084, 0], [1085, 0], [1086, 1], [1087, 0], [1088, 1], [1089, 1], [1090, 0], [1091, 1], [1092, 1], [1093, 1], [1094, 0], [1095, 1], [1096, 0], [1097, 0], [1098, 1], [1099, 0], [1100, 1], [1101, 0], [1102, 0], [1103, 0], [1104, 0], [1105, 1], [1106, 0], [1107, 0], [1108, 1], [1109, 0], [1110, 1], [1111, 0], [1112, 1], [1113, 0], [1114, 1], [1115, 0], [1116, 1], [1117, 1], [1118, 0], [1119, 1], [1120, 0], [1121, 0], [1122, 0], [1123, 1], [1124, 0], [1125, 0], [1126, 0], [1127, 0], [1128, 0], [1129, 0], [1130, 1], [1131, 1], [1132, 1], [1133, 1], [1134, 1], [1135, 0], [1136, 1], [1137, 0], [1138, 1], [1139, 0], [1140, 1], [1141, 1], [1142, 1], [1143, 0], [1144, 0], [1145, 0], [1146, 0], [1147, 0], [1148, 0], [1149, 0], [1150, 1], [1151, 0], [1152, 0], [1153, 0], [1154, 1], [1155, 1], [1156, 0], [1157, 0], [1158, 0], [1159, 0], [1160, 1], [1161, 0], [1162, 0], [1163, 0], [1164, 1], [1165, 1], [1166, 0], [1167, 1], [1168, 0], [1169, 0], [1170, 0], [1171, 0], [1172, 1], [1173, 0], [1174, 1], [1175, 1], [1176, 1], [1177, 0], [1178, 0], [1179, 0], [1180, 0], [1181, 0], [1182, 0], [1183, 1], [1184, 0], [1185, 0], [1186, 0], [1187, 0], [1188, 1], [1189, 0], [1190, 0], [1191, 0], [1192, 0], [1193, 0], [1194, 0], [1195, 0], [1196, 1], [1197, 1], [1198, 1], [1199, 0], [1200, 0], [1201, 1], [1202, 0], [1203, 0], [1204, 0], [1205, 1], [1206, 1], [1207, 1], [1208, 0], [1209, 0], [1210, 0], [1211, 0], [1212, 0], [1213, 0], [1214, 0], [1215, 0], [1216, 1], [1217, 0], [1218, 1], [1219, 0], [1220, 0], [1221, 0], [1222, 1], [1223, 0], [1224, 0], [1225, 1], [1226, 0], [1227, 0], [1228, 0], [1229, 1], [1230, 0], [1231, 0], [1232, 0], [1233, 0], [1234, 0], [1235, 1], [1236, 0], [1237, 1], [1238, 0], [1239, 1], [1240, 0], [1241, 1], [1242, 1], [1243, 0], [1244, 0], [1245, 1], [1246, 1], [1247, 0], [1248, 1], [1249, 0], [1250, 0], [1251, 1], [1252, 0], [1253, 1], [1254, 1], [1255, 0], [1256, 1], [1257, 1], [1258, 0], [1259, 1], [1260, 1], [1261, 0], [1262, 0], [1263, 1], [1264, 0], [1265, 0], [1266, 1], [1267, 1], [1268, 1], [1269, 0], [1270, 0], [1271, 0], [1272, 0], [1273, 0], [1274, 1], [1275, 1], [1276, 0], [1277, 1], [1278, 0], [1279, 0], [1280, 0], [1281, 0], [1282, 0], [1283, 1], [1284, 1], [1285, 0], [1286, 0], [1287, 1], [1288, 0], [1289, 1], [1290, 0], [1291, 0], [1292, 1], [1293, 0], [1294, 1], [1295, 0], [1296, 0], [1297, 0], [1298, 0], [1299, 1], [1300, 1], [1301, 1], [1302, 1], [1303, 1], [1304, 1], [1305, 0], [1306, 1], [1307, 0], [1308, 0], [1309, 1]]</pre>
 </div>
 </div>
 
@@ -15486,10 +15849,10 @@ var element = document.getElementById('8d029505-57f6-4666-818c-81f951e6c9dc');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[275]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[107]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="n">totalTest</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class=" highlight hl-python2"><pre><span></span><span class="n">finalResult</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">toCSVLine</span><span class="p">)</span><span class="o">.</span><span class="n">saveAsTextFile</span><span class="p">(</span><span class="s2">&quot;s3://decisiontree-bigdata/result.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15513,12 +15876,12 @@ var element = document.getElementById('8d029505-57f6-4666-818c-81f951e6c9dc');
 
 
 
-<div id="def73d0c-ec2f-4c32-a8d7-89f0320f937f" class="jupyter-widgets jp-OutputArea-output ">
+<div id="20b5a49f-ebe6-4206-859d-dde00b59a2d9" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('def73d0c-ec2f-4c32-a8d7-89f0320f937f');
+var element = document.getElementById('20b5a49f-ebe6-4206-859d-dde00b59a2d9');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "7f3fd341ccab4502b7fb969a425a260b", "version_major": 2, "version_minor": 0}
+{"model_id": "ca4283b83060455e856a602e883eecdd", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -15535,76 +15898,9 @@ var element = document.getElementById('def73d0c-ec2f-4c32-a8d7-89f0320f937f');
 
 
 
-<div id="f6ce0713-a386-4834-9fdf-e00ca308746a" class="jupyter-widgets jp-OutputArea-output ">
+<div id="2429fecb-8689-4690-8283-5cd97ebe3707" class="jupyter-widgets jp-OutputArea-output ">
 <script type="text/javascript">
-var element = document.getElementById('f6ce0713-a386-4834-9fdf-e00ca308746a');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[276]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="n">final</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">cell</span><span class="p">:</span> <span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">reduceByKey</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="f15e2668-d840-4e14-9c6c-a4680a082907" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('f15e2668-d840-4e14-9c6c-a4680a082907');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "34494c33c48a4cdd92d8713035db9ad0", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="17d13626-de73-47bb-9a6d-c79ddb8ca869" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('17d13626-de73-47bb-9a6d-c79ddb8ca869');
+var element = document.getElementById('2429fecb-8689-4690-8283-5cd97ebe3707');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
 {"model_id": "", "version_major": 2, "version_minor": 0}
@@ -15615,257 +15911,6 @@ var element = document.getElementById('17d13626-de73-47bb-9a6d-c79ddb8ca869');
 
 </div>
 
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[277]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="n">final</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="2baf2a86-c367-4f41-bb77-067b9f5e9d27" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('2baf2a86-c367-4f41-bb77-067b9f5e9d27');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "fcaa4b71dc744771a4a4e796124af802", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="5f6c9013-f221-4492-aa46-49470d9814b7" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('5f6c9013-f221-4492-aa46-49470d9814b7');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[(True, 721), (False, 170)]</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[278]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="n">ans</span> <span class="o">=</span> <span class="n">final</span><span class="o">.</span><span class="n">mapValues</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">/</span> <span class="n">totalTest</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="8c9ae626-5989-4d83-913f-8e8de7cdc700" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('8c9ae626-5989-4d83-913f-8e8de7cdc700');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "6da22168cf5643888228dcc8c8139d00", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="63589b93-41d6-49ad-b9c8-b4ceebc99749" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('63589b93-41d6-49ad-b9c8-b4ceebc99749');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[279]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span><span class="n">ans</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="0d4d2a28-9476-4b54-ab81-1cb83f85681f" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('0d4d2a28-9476-4b54-ab81-1cb83f85681f');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "123f52cb8c0b4b33a009aa3cd2f0c857", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="11448ab2-5c03-4f24-addd-d1f6d8ab926b" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('11448ab2-5c03-4f24-addd-d1f6d8ab926b');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[(True, 0.8092031425364759), (False, 0.19079685746352412)]</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python2"><pre><span></span>
-</pre></div>
-
-     </div>
-</div>
-</div>
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">

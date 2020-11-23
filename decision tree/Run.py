@@ -1,15 +1,16 @@
 data = spark.read.csv("s3://decisiontree-bigdata/Titanic_train.csv", header=True, inferSchema=True)
 
-data.show()
+clearData = data.na.drop()
 
-data.printSchema
-
-filtered = data.select("Survived", "Sex", "SibSp", "Parch", "Embarked").na.drop()
+filtered = data.select("PassengerId", "Survived", "Sex", "SibSp", "Parch", "Embarked").na.drop()
 
 filtered.show()
 
+filtered.schema.names
+
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
+import copy
 
 def calTargetEntropy(data, target):
   targetCol = data.select(target) 
@@ -22,22 +23,21 @@ def filterData(data, colName, value):
   filtered = data.filter(col(colName) == value).drop(colName)
   return filtered
 
-def getBestFeature(data, target):
-
+def getBestFeature(data, target, serial):
   columns = data.schema.names
-  bestGain = 0.0
+  bestGain = -1
   bestFeature = ""
   total = data.count()
   targetEntropy = calTargetEntropy(data, target)
   for name in columns:
-    if name == target: continue
+    if name == target or name == serial: continue
     df = data.groupBy(name, target).count()
     totaldf = data.groupBy(name).count().toDF(name, "totalcount")
     joindf = df.join(totaldf, on = [name])
     resultdf = joindf.withColumn("proc", col("count") / col("totalcount")).withColumn("entropy", - col("proc") * log(2.0, col("proc"))).groupBy(name).agg({"entropy":"sum"}).toDF(name, "entropy")
     procdf = totaldf.withColumn("proc", col("totalcount") / lit(total)).select(name, "proc")
     entropy = resultdf.join(procdf, on=[name]).withColumn("mul", col("proc") * col("entropy")).agg({"mul": "sum"}).collect()[0][0]  
-    if targetEntropy - entropy >= bestGain: # use larger or equal to avoid returning emtpy string
+    if targetEntropy - entropy > bestGain: 
       bestGain = targetEntropy - entropy
       bestFeature = name
   return bestFeature
@@ -45,10 +45,10 @@ def getBestFeature(data, target):
 def getMajorClass(data, target):
   return data.select(target).groupBy(target).count().sort(col("count").desc()).collect()[0][0]
 
-def createDecisionTree(data, target): 
-  schema = data.schema.names
- # if target not in schema or data.count() < 1:
- #   return "null"
+def createDecisionTree(data, target, serial): 
+  schema = copy.deepcopy(data.schema.names)
+  schema.remove(target)
+  schema.remove(serial)
   
   targetClasses = data.select(target).distinct().rdd.map(lambda r : r[0]).collect()
   # stop when only one category left
@@ -56,25 +56,22 @@ def createDecisionTree(data, target):
     return targetClasses[0]
   
   # return major classes when only one feature left
-  if len(data.schema.names) <= 1:
+  if len(schema) <= 0:
     return getMajorClass(data, target)
   
-  bestFeature = getBestFeature(data, target)
+  bestFeature = getBestFeature(data, target, serial)
   
   tree = {bestFeature: {}}
 
-  columns = data.schema.names
   values = data.select(bestFeature).distinct().rdd.map(lambda r : r[0]).collect()
   for value in values:
     if not value:
         nullValue = value
-    tree[bestFeature][value] = createDecisionTree(filterData(data, bestFeature, value), target)
+    tree[bestFeature][value] = createDecisionTree(filterData(data, bestFeature, value), target, serial)
     
   return tree
 
-
-
-tree = createDecisionTree(filtered, "Survived")
+tree = createDecisionTree(filtered, "Survived", "PassengerId")
 
 tree
 
@@ -85,7 +82,12 @@ def classify(dataDict, tree):
     
     if value == None:
         return "null"
-    nextDict = secondDict[value]
+    
+    if value not in secondDict.keys():
+        for secKey in secondDict.keys():
+            nextDict = secondDict[secKey]
+    else:  
+        nextDict = secondDict[value]
 
   if isinstance(nextDict, dict):
     return classify(dataDict, nextDict)
@@ -93,31 +95,28 @@ def classify(dataDict, tree):
     return nextDict
 
 def fit(row):
-  global emptyTree, emptySecDict, emptyDataDict, emptyKey
   result = classify(row.asDict(), tree)
-  check = result == row.Survived
-  return [result, row.Survived, check]
+  return [row.PassengerId, result]
 
-test = data.rdd.map(fit)
+testData = spark.read.csv("s3://decisiontree-bigdata/Titanic_test.csv", header=True, inferSchema=True)
+
+totalCount = testData.count()
+
+totalCount
+
+test = testData.rdd.map(fit)
 
 test.collect()
 
-emptyValue
+def toCSVLine(data):
+  return ','.join(str(d) for d in data)
 
-emptyDataDict
+header = sc.parallelize([['PassengerId', 'Survived']])
 
-totalTest = test.count()
+finalResult = header.union(test)
 
-final = test.map(lambda row: row[2]).map(lambda cell: (cell, 1)).reduceByKey(lambda x,y: x + y)
+finalResult.collect()
 
-final.collect()
-
-ans = final.mapValues(lambda x: x / totalTest)
-
-ans.collect()
-
-
-
-
+finalResult.map(toCSVLine).saveAsTextFile("s3://decisiontree-bigdata/result.csv")
 
 
