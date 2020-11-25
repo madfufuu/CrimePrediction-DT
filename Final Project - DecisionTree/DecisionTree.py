@@ -118,5 +118,3 @@ finalResult = header.union(test)
 finalResult.collect()
 
 finalResult.map(toCSVLine).saveAsTextFile("s3://decisiontree-bigdata/result.csv")
-
-
