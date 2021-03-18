@@ -1,4 +1,4 @@
-# CS6350_FinalProject
+# Distributed Decision Tree with PySpark
 Final project for CS6350 - distributed decision trees with PySpark
 
 Team Members:
